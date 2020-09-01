@@ -1,0 +1,297 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #ffffff;
+    color: #333333;
+    line-height: 1.6;
+    height: 100vh; 
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+}
+
+.navbar{
+    position: fixed;
+    top:0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 8vh;
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo h4{
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    color:#ef476f;
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    padding: 0.5rem;
+}
+
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.navbar ul li{
+    margin: 0 1rem;
+    padding: 1rem;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    letter-spacing: 0.2rem;
+    padding: 1em;
+    color: #edfeff;
+    font-weight: 900;
+}
+
+.navbar ul li a:hover{
+    color: #ef476f;
+    transition: ease-in 0.5s;
+}
+
+.scrolling-active{
+    background: #edfeff;
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, .1);
+}
+
+.scrolling-active ul li a{
+    color: #111111;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+#home{
+    background:linear-gradient(to right,rgba(5, 161, 245,0.5),rgba(0, 223, 252,0.2)), url('model1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.card{
+    width: 40%;
+    height: 13rem;
+    display: flex;
+    align-items: center;
+    margin-top: 14rem;
+    margin-left: 4rem;
+}
+
+.card-content h2{
+    padding: 1rem;
+    color: #f8ffe5;
+    font-size: 5rem;
+    font-weight: 700;
+    border-bottom: solid 2px #f8ffe5;
+}
+
+.card-content p{
+    padding: 2rem;
+    color:#f8ffe5; 
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.parajuli{
+    color: #ef476f;
+}
+
+.about{
+    background-color: #edfeff;
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+
+.about-content{
+    display: grid;
+    grid-template-rows: 20% 80%;
+    height: 100vh;
+}
+
+.about-content h2{
+    margin-left: 3em;
+    letter-spacing: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: #ef476f;
+    justify-self: left;
+    margin-top: 6rem;
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.about-content p{
+    line-height: 1.6;
+    margin-left: 2em;
+    padding-left: 0;
+    color: #111111;
+    margin-top: 5rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.about-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.meals-img{
+    border-radius: 10px;
+    display: flex;
+    height: 90%;
+    width: 50%;
+    box-shadow: 5px 5px 10px #333333;
+}
+
+#gallery{
+    background:linear-gradient(to right,rgba(26, 104, 177, 0.788),rgba(122, 174, 219, 0.507));
+}
+
+.main-gallery{
+    margin: 0px auto;
+    display: grid;
+    grid-template-rows: 30% 70%;
+}
+
+.main-gallery h2{
+    font-family: 'Poppins', sans-serif;
+    color: #ef476f;
+    margin-top: 1.3em;
+    font-weight: 900;
+    font-size: 3em;
+    letter-spacing: 0.5rem;
+    text-align: center;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr); /*jati image thape pani layout mei basxa*/
+    gap: 2em;
+}
+
+.gallery-items{
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+    margin: 0 auto;
+} 
+
+.item-1{
+    background: url('grid1.jpg');    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item-2{
+    background: url('grid2.jpg');    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item-3{
+    background: url('grid3.jpg');    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item-4{
+    background: url('grid4.jpg');    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item-5{
+    background: url('grid5.jpg');    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item-6{
+    background: url('grid6.jpg');    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contact{
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    background: #f5f7f6;
+}
+
+.contact-content h2{
+    font-family: 'Poppins', sans-serif;
+    color: #ef476f;
+    margin-top: 2.2em;
+    font-weight: 900;
+    font-size: 2em;
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+
+.contact-content p{
+    line-height: 1.6;
+    color: #111111;
+    margin-top: 1rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.map{
+    display: flex;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info{
+    display: grid;
+    margin:auto auto;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.email, .address, .phone{
+    margin: auto auto;
+    font-size: 1.3rem;
+}
+
+
+
+
+

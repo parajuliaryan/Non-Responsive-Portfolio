@@ -1,0 +1,35 @@
+.burger div{
+    background-color: black;
+    width: 32px;
+    height: 3px;
+    margin: 5px 0;
+}
+
+.burger{
+    margin-top: 0.7em;
+    margin-right: 1.2em;
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+
+    .navbar{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .navbar ul{
+       position: absolute;
+       top: 0px;
+       right: 0;
+       height: 100vh;
+       flex-direction: column;
+       background-color: black;
+    }
+
+   
+}
